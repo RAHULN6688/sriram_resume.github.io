@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+        <style>
+            body{
+   background-color:var(--blue);
+}
+@media only screen and (max-width:500px){
+
+body{
+    .left{
+        float:none;
+    }
+    .right{
+        float:none;
+    }
+    .left-section{
+        float: none;}
+        .s-box{
+            float: none;}
+            .right-heading img{
+                float: none;}
+                .span1 img{
+                    float:none;}
+                    .right-section{
+                        float:none;}
+                        background-color: blue;
+}
+}
+            :root{
+                --bgcolor:#beb8ac;
+                --blue:#2fb7fe;
+                --black:#3d3f42;
+                --white:#f4f7ff;
+                --gray:#d8dce4;
+                --lightgray:#8e9095;
+            }
+            *{
+                margin:0px;
+                padding:0px;
+                box-sizing:border-box;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            body{
+                background:var(--bgcolor);
+            }
+            .clearfix{
+                clear:both;  
+            }
+            .resume-box{
+                width: 800px;
+                height:1000px;
+                margin: 100px auto;
+                background:var(--white);
+                box-shadow:5px 21px 20px #3d3f4238;
+            }
+            .left-section{
+                background:var(--black);
+                width:250px;
+                height:1000px;
+                float:left;
+            }
+            .profile{
+                overflow:hidden;
+                position:relative;
+            }
+            .blue-box{
+                width:257px;
+                height:407px;
+                background:var(--blue);
+                margin-left:-100px;
+                transform:rotatez(48deg);
+                margin-top:-178px;
+            }
+            .profile-img{
+                position:absolute;
+                z-index:9;
+                width:150px;
+                height:150px;
+                transform:translate(-50%,-50%);
+                left:115px;
+                top:100px;
+                border-radius: 90%;
+                border: 3px solid var(--gray);
+            }
+            .name{
+                color:var(--gray);
+                text-align:center;
+                margin-top:-34px;
+                font-size:30px;
+                letter-spacing:2px;
+                font-weight:400;
+                text-transform: uppercase;
+            }
+            .name span{
+                color:var(--blue);
+            }
+            .n-p{
+                width:100px;
+                margin:0 auto;
+                text-align:center;
+                padding:7px;
+                border-bottom: 1px solid var(--gray);
+                border-top:1px solid var(--gray);
+                color:var(--gray);
+                margin-top:11px ;
+                text-transform: uppercase;
+            }  
+            .info{
+                margin-top: 50px;
+            }
+            .heading{
+                width:100px;
+                margin:0 auto;
+                padding:2px;
+                border-bottom: 1px solid var(--gray);
+                border-top:1px solid var(--gray);
+                color:var(--gray);
+                margin-top:11px ;
+                text-transform: uppercase;
+                font-size:18px;
+            }
+            .p1{
+                color:var(--gray);
+                width:184px;
+                margin:0 auto;
+                margin-top:25px;
+                font-size:15px;
+                line-height:14px;
+            }
+            .p1 span{
+                font-size:12px;
+            }
+            .span1 img{
+                background:white;
+                width:30px;
+                padding: 6px;
+                border-radius: 16px;
+                float: left;
+                margin-right:10px;
+            }
+            .right-section{
+                padding: 40px 30 px;
+                background: var(--white);
+                width: 68%;
+                float: left;
+                height: 100px;
+            }
+            .right-heading img{
+                background: var(--black);
+                width:36px;
+                padding: 7px;
+                border-radius: 17px;
+                float: left; 
+                display: inline-block;
+                margin-top: -6px;
+            }
+            .p2{
+                margin:0 auto;
+                padding:2 px;
+                border-bottom: 1px solid var(--lightgray);
+                border-top:1px solid var(--lightgray);
+                color:var(--black);
+                text-transform: uppercase;
+                font-size:18px;
+                font-weight:bolder ;
+                margin-left: 50px;
+                line-height: 18px;
+            }
+            .p3{
+                margin-top:20px;
+                color:var(--lightgray);
+                text-align:justify;
+                word-spacing:-4px;
+            }
+            .left{
+                width:25%;
+                float:left;
+
+            }
+            .right{
+                width:75%;
+                float:left;
+
+            }
+            .ir-box{
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+            }
+            .p4{
+                font-size: 14px;
+                font-weight: 600;
+            }
+            .p5{
+                font-size: 12px;
+                color: var(--lightgray);
+            }
+            .s-box{
+                width: 50%;
+                float:left;
+                padding: 20px 20px 20px 0px;
+            }
+            #progress{
+                background: #333;
+                border-radius: 13px;
+                height: 8px;
+                width: 100%;
+            }
+            #progress:after{
+                content: '';
+                display: block;
+                background: var(--blue);
+                width:50%;
+                height:100%;
+                border-radius: 9px;
+            }
+            #progress1{
+                background: #333;
+                border-radius: 13px;
+                height: 8px;
+                width: 100%;
+            }
+            #progress1:after{
+                content: '';
+                display: block;
+                background: var(--blue);
+                width:40%;
+                height:100%;
+                border-radius: 9px;
+            }
+            #progress2{
+                background: #333;
+                border-radius: 13px;
+                height: 8px;
+                width: 100%;
+            }
+            #progress2:after{
+                content: '';
+                display: block;
+                background: var(--blue);
+                width:80%;
+                height:100%;
+                border-radius: 9px;
+            }
+            #progress3{
+                background: #333;
+                border-radius: 13px;
+                height: 8px;
+                width: 100%;
+            }
+            #progress3:after{
+                content: '';
+                display: block;
+                background: var(--blue);
+                width:90%;
+                height:100%;
+                border-radius: 9px;
+            }
+            .p6{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .h-img{
+                margin-top: 25px;
+                width: 45px;
+                margin-right:45px ;
+            }
+    
+                </style>
+    </head>
+    <body>
+    <div class="resume-box">
+        <div class="left-section">
+            <div class="profile">
+                <img src="CompressJPEG.online_60kb_128087.jpg" class= "profile-img">   
+                <div class="blue-box"></div>
+        </div>
+        <h2 class="name">PATURI<br><span>SRIRAM</span></h2>
+        <p class="n-p">ARTIFICAL INTELLIGENCE</p>
+        <div class="info">
+            <p class="heading">Info</p>
+            <p class="p1"><span class="span1"><img src="https://th.bing.com/th/id/OIP.s0I_dMcX1Ezo6A0H3HWCKgHaHa?w=181&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7"</span>Address
+            <br>D-N0:2-31b ONGOLE PRAKASAM (DIST) ANDHRAPRADESH </span></p>
+            <p class="p1"><span class="span1"><img src="https://th.bing.com/th/id/OIP.FjhwL25mlD7DlDURqHCAOgHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.3&pid=1.7"</span>phone
+            <br>+91 8179482109</span></p>
+            <p class="p1"><span class="span1"><img src="https://th.bing.com/th/id/OIP.ZYBoGvR_bfdiAQLZZpVHQAHaFj?w=231&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"</span>Email
+            <br>srirampathuri2394@gmail.com</span></p>
+        </div>
+        <div class="info">
+            <p class="heading">Social</p>
+            <p class="p1"><span class="span1"><img src="https://th.bing.com/th/id/OIP.Qsl7ZlqntEmmCLXEnfxLOgHaHa?w=201&h=201&c=7&r=0&o=5&dpr=1.3&pid=1.7"</span>Instagram
+            <br>@srirampathuri</span></p>
+            <p class="p1"><span class="span1"><img src="https://th.bing.com/th/id/OIP.Jf5-Use2r12rvoxLcThZhAHaEL?pid=ImgDet&rs=1"</span>Facebook
+            <br>srirampathuri</span></p>
+            <p class="p1"><span class="span1"><img src="https://th.bing.com/th/id/OIP.w_zDkEJ9aLiWR-g0rff8hwHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.3&pid=1.7"</span>linkdin
+            <br>sriram pathuri</span></p>
+            <p class="p1"><span class="span1"><img src="https://th.bing.com/th/id/OIP.PXTov9TveYX3Upu592UOygHaHa?w=202&h=202&c=7&r=0&o=5&dpr=1.3&pid=1.7"</span>twitter
+            <br>srirampathuri</span></p>
+        </div>
+    </div>
+    <div class="right-section">
+        <div style=" padding: 15px;">
+        <div class="right-heading">
+            <br>
+            <img src="https://th.bing.com/th/id/OIP.Cz-YiQOApQzTo_RPSG906wHaHa?w=167&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+            <p class="p2">Profile</p>
+        </div>
+        <p class="p3">
+        </p>
+        <div class="clearfix"></div>
+        <div class="clearfix"></div>
+        <div class="ir-box">
+                <p class="p4">Flexible to situations. </p>
+                <p class="p4">excellence in managing the big data and database systems</p>
+            <div class="clearfix"></div>
+        </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="right-heading">
+            <img src="https://th.bing.com/th/id/OIP.R2ipR3TPO_IbebE11LoOyAHaF-?w=221&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+            <p class="p2">Education</p>
+        </div>
+        <div class="clearfix"></div>
+        <div class="ir-box">
+            <div class="left">
+                <p class="p4">1th-8th</p>
+                <p class="p5"></p>
+                <p class="p5">2010-2018</p>
+            </div>
+            <div class="right">
+                <p class="p4">SRI CHAITANYA SCHOOL</p>
+                <p class="p5">ONGOLE</p>
+            </div>
+        <div class="clearfix"></div>
+        <div class="ir-box">
+            <div class="left">
+                <p class="p4">9th-10th</p>
+                <p class="p5"></p>
+                <p class="p5">2018-2020</p>
+            </div>
+            <div class="right">
+                <p class="p4">VISWABHARATI HIGH SCHOOL</p>
+                <p class="p5">VIJAYAWADA</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="ir-box">
+            <div class="left">
+                <p class="p4">INTERMEDIATE</p>
+                <p class="p5">2020-2022</p>
+            </div>
+            <div class="right">
+                <p class="p4">NARAYANA GROUP INSTITUTIONS</p>
+                <p class="p5">VIJAYAWADA</p>
+            </div>
+            <br><br>
+            <div class ="ir-box">
+                <div class="left">
+                    <p class="p4">UNDER GRADUATION</p>
+                    <P class="p5">2022-2026</P>
+                </div>
+                <div class="right">
+                    <p class="p4">AMRITA VISHWA VIDYA PEETHAM</p>
+                    <p class="p5">KERALA</p>
+                </div>
+            </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <br>
+        <div class="right-heading">
+            <img src="https://th.bing.com/th/id/OIP.o2inSZ6E94mYzZPcrnw_SQHaHR?w=207&h=203&c=7&r=0&o=5&dpr=1.3&pid=1.7">
+            <p class="p2">Skills And epertize</p>
+        </div>
+        <div class="clearfix"></div>
+        <div class=>
+            <p class="p6">HTML</p>
+            <div id="progress"></div>
+            <p class="p6">JAVA</p>
+            <div id="progress1"></div>
+        </div>
+        <div class="clearfix">
+            <p class="p6">C-LANGUAGE</p>
+            <div id="progress2"></div>
+            <p class="p6">CSS</p>
+            <div id="progress3"></div>
+        </div>
+        <div class="clearfix"></div>
+        <br><br>
+        <div class="right-heading">
+            <img src="https://th.bing.com/th/id/OIP.9kFeDo30JHDzLgPqg-_DNAHaHa?pid=ImgDet&w=512&h=512&rs=1">
+            <p class="p2">hobby </p>
+        </div>
+        <div class="clearfix"></div>
+        <img src="https://th.bing.com/th/id/R.dc316eeb4892a68bad84940e499bbba5?rik=WbtuyWi3iFQtug&riu=http%3a%2f%2f2.bp.blogspot.com%2f-YTHK9l08T5c%2fUEcNhDJIIUI%2fAAAAAAAAANU%2fy3gbFaH1Azw%2fs1600%2fbadminton_logo.gif&ehk=mMDnz91PxgYx6Eq0eYNl8SMp2IF1oaKz3eRCV5HKHM4%3d&risl=&pid=ImgRaw&r=0" class="h-img">
+        <img src="https://th.bing.com/th/id/OIP.N9G4Qvv7Lsq7ANsiogbBHwHaHa?w=183&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="h-img">
+        <img src="https://th.bing.com/th/id/OIP.tJu1HXPbAYD2OaMZcGAB3AHaHa?w=196&h=196&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="h-img">
+        <img src="https://th.bing.com/th/id/OIP.-vvp2knbQn5P3kHvMs5mdwHaHf?w=171&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="h-img">
+        <img src="https://th.bing.com/th/id/OIP.-yXp0C4Xy9jRsUxqCss_GQHaFZ?w=274&h=200&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="h-img">
+    </div> 
+    <div class="clearfix"></div>
+</div></div>
+</body>
+</html>
